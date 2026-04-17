@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video width="400" height="300" controls><!-- controls attribute adds play, pause, and other controls to the video player -->
+        <source src="video.mp4" type="video/mp4"><!-- source element specifies the video file and its format -->
+        <source src="video.ogg" type="video/ogg">  <!-- you can provide multiple source elements for different video formats to ensure compatibility across browsers -->
+        Your browser does not support the video tag.
+    </video>
+    <video src="video.mp4" width="400" height="300" controls muted autoplay loop>
+        
+    </video><!-- you can also use the src attribute directly on the video tag, but using source elements is more flexible for providing multiple formats -->
+
+</body>
+</html>

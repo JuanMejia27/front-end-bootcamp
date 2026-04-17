@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="usuario">Usuario:</label><br>
+        <input 
+            type="text" 
+            placeholder="usuario" 
+            minlength="5"
+            maxlength="10"
+        ><br><!-- minlength: especifica el número mínimo de caracteres que el usuario debe ingresar. -->
+             <!-- maxlength: especifica el número máximo de caracteres que el usuario puede ingresar. -->        
+        <label for="telefono">Teléfono:</label>
+        <input 
+            type="tel" 
+            placeholder="Teléfono" 
+            min="20" 
+            max="100"
+            size="50"
+            pattern="[2-6]{5}-[0-9]-{3}-[0-8][4]"
+            ><br>
+            <!-- pattern: especifica una expresión regular que el valor del campo debe cumplir para ser considerado válido/ en este caso, un formato de teléfono.-->
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" size="40"><br>
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" value="user@example.com" disabled><br><!-- disabled: el usuario no puede modificar ni seleccionar el valor del campo -->
+        <input type="submit" value="Enviar">
+</body>
+</html>
