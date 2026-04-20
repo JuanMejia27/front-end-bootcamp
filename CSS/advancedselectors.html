@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        div ul li:first-child first child hace referencia al primer elemento hijo de un elemento
+        {
+            color: darkred;
+            background-color: yellow;
+        }
+        div ul li:last-child last child hace referencia al último elemento hijo de un elemento
+        {
+            color: white;
+            background-color: black;
+        }
+        div ul li:nth-child(4) nth-child hace referencia a un elemento hijo específico, en este caso el cuarto elemento hijo de un elemento
+        {
+            color: white;
+            background-color: red;
+        }
+        li:nth-child(2n) nth-child(2n) hace referencia a los elementos hijos pares de un elemento, en este caso el segundo, cuarto y sexto elemento hijo de un elemento
+        {
+            color: white;
+            background-color: blue;
+        }
+         li:nth-child(2n) nth-child(2n-1) hace referencia a los elementos hijos impares de un elemento, en este caso el primer, tercer y quinto elemento hijo de un elemento
+        {
+            color: white;
+            background-color: green;
+        }*/
+        /*div:empty{
+            border: 3px solid red;
+        }*/
+        /*div ul li:not() not hace referencia a los elementos hijos de un elemento que no son el primer elemento hijo de ese elemento*/
+        div ul li:not(.li3)
+        {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul><!--Un UL es una lista no ordenada-->
+            <li>Elemento 1</li><!--Un LI es un elemento de la lista y el primer elemento hijo -->
+            <li>Elemento 2</li>
+            <li class="li3">Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+        </ul>
+    </div>        
+        <ul><!--Un UL es una lista no ordenada-->
+            <li>Elemento 1</li><!--Un LI es un elemento de la lista y el primer elemento hijo -->
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+        </ul>
+    <div></div>
+</body>
+</html>
