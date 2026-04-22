@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*div ul li:first-child{first-child se refiere al primer elemento hijo de un elemento 
+            color: red;
+        }*/
+        /* las pseudoclases se utilizan para seleccionar elementos en función de su posición o estado */
+        /*div ul li:last-child{last-child se refiere al último elemento hijo de un elemento 
+            color: blue;
+            background-color: gray;
+        }*/
+        /*div ul li:nth-child(2n){nth-child se refiere a un elemento hijo específico de un elemento, en este caso el elemento par que sea hijo 
+            color: green;
+            background-color: yellow;
+        }*/
+        div ul li:nth-of-type(2n){/*nth-of-type se refiere a un elemento hijo específico de un elemento, en este caso el elemento par que sea hijo del mismo tipo (li)*/ 
+            color: purple;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+</body>
+</html>

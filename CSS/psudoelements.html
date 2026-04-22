@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        margin: 30px 0 0 30px;
+    }
+    h1::selection{
+        background-color: purple;
+        color: hotpink;
+        font-size: 30px;
+    }
+    h1::before{/*se refere a un elemento antes del contenido del h1*/
+        content: "Hola";
+        color: blue;
+        font-size: 20px;
+    }
+    h1::after{/*se refere a un elemento despues del contenido del h1*/
+        content: "Fin";
+        color: blue;
+        font-size: 20px;
+    }
+    ::marker{
+        color: lawngreen;
+    }
+    input::placeholder{
+        color: lightcoral;
+        /*font-size: 30px; hace el texto más grande*/
+    }
+</style>
+<body>
+    <h1>Hola, mundo!</h1>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ul>
+    <input type="text" placeholder="nombre de usuario"><!--El pseudo-elemento ::placeholder se utiliza para aplicar estilos al texto de marcador de posición dentro de un campo de entrada. -->
+</body>
+</html>
