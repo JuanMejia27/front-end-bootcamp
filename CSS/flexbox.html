@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;/* Aligne los elementos en una fila */
+            flex-direction: row; 
+            /*row-reverse; Cambia la dirección de los elementos a fila inversa */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+            /* flex-flow: column wrap; Combina flex-direction: column; y flex-wrap: wrap; para organizar los elementos en columnas que se envuelven sin margenes*/
+            width: 1000x;
+            height: 80vh;
+            justify-content: justify;
+            align-items: top;
+            background-color: lightgray;
+        }
+        .a{
+            background-color: lightcoral;
+            width: 200px;
+            height: 200px;
+        }
+        .b{
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+        .c{
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+            order: -2;
+        }
+        .d{
+            background-color: lightyellow;
+            width: 200px;
+            height: 200px;
+        }
+        .e{
+            background-color: lightpink;
+            width: 200px;
+            height: 200px;        }
+        .f{
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+        .g{
+            background-color: lightcyan;
+            width: 200px;
+            height: 200px;       
+            order: -1; /* Cambia el orden de los elementos, en este caso, el elemento con la clase "g" se mostrará antes que los demás elementos */
+        }
+        .h{
+            background-color: lightsalmon;
+            width: 200px;
+            height: 200px;
+        }
+        .i{
+            background-color: lightseagreen;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">Uno</div>
+        <div class="b">Dos</div>
+        <div class="c">Tres</div>
+        <div class="d">Cuatro</div>
+        <div class="e">Cinco</div> 
+        <div class="f">Seis</div>
+        <div class="g">Siete</div>
+        <div class="h">Ocho</div>
+        <div class="i">Nueve</div>
+    </div>
+</body>
+</html>

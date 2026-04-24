@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            font-size: 22px;
+        }
+        @media screen and (min-width: 900px) and (max-width: 1100px){/* Aplica estilos cuando el ancho de la pantalla sea igual o menor a 1100px */
+            div{
+                color: pink;
+                background-color: lightcoral;
+                font-size: 18px;
+            }
+        }
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            div{
+                color: green;
+                background-color: rebeccapurple;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi porro nam molestias ea eos corporis tempora consectetur odio eius laboriosam!
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            grid-gap: 10px 10px; /* hace un espacio entre los elementos del grid, se puede usar row-gap o column-gap para especificar el espacio entre filas o columnas respectivamente */
+            margin-left: 200px;
+            justify-items: center;
+            align-items: center;
+        }
+        .a{
+            background-color: lightcoral;
+            width: 200px;
+            height: 200px;
+            /*
+            grid-column-start: 2;  especifica en que columna empieza el elemento 
+            grid-column-end: 3;  especifica en que columna termina el elemento, si se omite, el elemento ocupará solo una columna 
+            grid-row-start: 2;  especifica en que fila empieza el elemento 
+            grid-row-end: 3;  especifica en que fila termina el elemento, si se omite, el elemento ocupará solo una fila */
+        }
+        .b{
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+        .c{
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+        }
+        .d{
+            background-color: lightyellow;
+            width: 200px;
+            height: 200px;
+        }
+        .e{
+            background-color: lightpink;
+            /*width: 200px;
+            height: 200px;*/
+            /*grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;*/
+            /*grid-row: 1/4;crece en las filas 1, 2 y 3
+            grid-column: 1/2;crece en la columna 1*/
+            /*grid-row: 1/2;
+            grid-column: 1/4; crece en las columnas 1, 2 y 3*/
+        }
+        .f{
+            background-color: lightgray;
+            /*width: 200px;
+            height: 200px;*/
+            /*grid-row: 3/5;crece en las filas 3 y 4, si se omite el valor de grid-row-end, el elemento ocupará solo una fila, pero si se especifica un valor mayor al número de filas del grid, el elemento ocupará todas las filas restantes*/
+            /*grid-column: 1/2;*/
+        }
+        .g{
+            background-color: lightcyan;
+            /*width: 200px;
+            height: 200px;*/
+            /*grid-row: 3/5;
+            grid-column: 3/4;*/
+        }
+        .h{
+            background-color: lightsalmon;
+            width: 200px;
+            height: 200px;
+        }
+        .i{
+            background-color: lightseagreen;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">Uno</div>
+        <div class="b">Dos</div>
+        <div class="c">Tres</div>
+        <div class="d">Cuatro</div>
+        <div class="e">Cinco</div>
+        <div class="f">Seis</div>
+        <div class="g">Siete</div>
+        <div class="h">Ocho</div>
+        <div class="i">Nueve</div>
+    </div>
+</body>
+</html>
