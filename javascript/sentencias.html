@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = 30;
+        b = 30;
+        c = 20;
+        //Ejemplo de un If
+        if (a == b) {// se pueden usar operadores logicos &&, ||, ! para combinar condiciones tambien <> == !=
+            document.write("a es igual que b<br><br>");
+        } 
+
+        //Ejemplo de un If else
+        if (a == b) {
+            document.write("Hola mundo<br><br>");
+        } else {
+            document.write("<br>ups, algo salio mal<br><br>");
+        }
+        if (a != c) {
+            document.write("Correcto<br><br>");
+        } else {
+            document.write("Incorrecto<br><br>");
+        }
+
+        //operador condicional (ternario)
+        var x = 150; //x = 50
+        var y;
+        //x == 150 ? (y = "Si es igual<br><br>") : (y = "No es igual<br><br>");// funciona como un if else, se evalua la condicion y se asigna el valor a y dependiendo del resultado de la condicion
+        y = x == 151 ? "Si es igual<br><br>" : "No es igual<br><br>";
+        document.write(y);
+        
+        //Ejemplo de un switch
+        var dia = 0; //0 = Domingo, 1 = Lunes, 2 = Martes, 3 = Miercoles, 4 = Jueves, 5 = Viernes, 6 = Sabado
+        switch (dia) {
+            case 0:
+                document.write("Hoy es Domingo<br><br>");
+                document.write("<h1>Bienvenido</h1>");
+                break;
+            case 1:
+                document.write("Hoy es Lunes<br><br>");
+                break;
+            case 2:
+                document.write("Hoy es Martes<br><br>");
+                break;
+            case 3:
+                document.write("Hoy es Miercoles<br><br>");
+                break;
+            case 4:
+                document.write("Hoy es Jueves<br><br>");
+                break;
+            case 5:
+                document.write("Hoy es Viernes<br><br>");
+                break;
+            case 6:
+                document.write("Hoy es Sabado<br><br>");
+                break;
+            default:
+                document.write("introduce un numero de dia valido<br><br>");
+        }
+
+        //if anidados
+        var val = 49;
+        if (val >= 80 && val <= 100) {//se pueden usar operadores logicos &&, || para las condiciones de or y and respectivamente
+            document.write("Estas en el rango<br><br>");
+        } else if (val >= 60 && val <= 80) {
+            document.write("Estas en el rango<br><br>");
+        } else if (val >= 50 && val <= 70) {
+            document.write("Estas en el rango<br><br>");
+        } else if (val < 50) {
+            document.write("Tu eres digno<br><br>");
+        } else {
+            document.write("ingresa un valor valido<br><br>");
+        }
+
+        //ciclo for el cual se ejecuta un bloque de codigo un numero determinado de veces, se compone de tres partes: la inicializacion, la condicion y el incremento o decremento
+        /*for (var z = 1; z <= 10; z++) {
+            document.write("Incorrecto: " + z + "<br>");
+        }*/
+        for (var a = 1; a <= 10; a++) {
+            if (a == 9){
+                document.write("Llegaste al numero"+ a + "<br>");
+                //continue;//continue se utiliza para saltar a la siguiente iteracion del ciclo, en este caso se salta el numero 5 y se continua con el numero 6
+                break;//break se utiliza para salir del ciclo, en este caso se sale del ciclo cuando se llega al numero 5, por lo que no se ejecuta el numero 6 ni el 7, etc
+            }
+            document.write("Correcto: " + a + "<br>");
+        }
+
+        //Tipos de datos de JavaScript: string, number, boolean, null, undefined, object, symbol
+        var hola = ["javascript", "js", "python"];//"Texto" es un string, 30 es un number, true es un boolean, null es un valor nulo, undefined es un valor indefinido, {nombre: "Juan"} es un objeto, Symbol("id") es un simbolo
+        var variable = {
+            nombre: "Juan",
+            apellido: "Mejia",
+        };//un objeto es una coleccion de propiedades y metodos, en este caso el objeto variable tiene dos propiedades: nombre y apellido, cada una con su respectivo valor
+        document.write("<br>" + hola + "<br>");
+        document.write("<br>" + variable + " " + variable + "<br>");
+        
+        document.write(typeof hola + "<br>");//typeof se utiliza para saber el tipo de dato de una variable, en este caso se imprime "string" porque la variable hola es un string
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nombre = "Juan";
+        console.log(nombre);//console.log() se utiliza para mostrar información general en la consola, como el valor de variables o mensajes de depuración.
+        console.warn(nombre + " es un nombre de advertencia");//console.warn() se utiliza para mostrar advertencias en la consola, indicando que algo podría no estar funcionando correctamente, pero no es un error crítico.
+        console.error(nombre + " es un nombre de error");//console.error() se utiliza para mostrar mensajes de error en la consola, indicando que algo ha fallado o no se ha ejecutado correctamente.
+        console.table(["nombre", "problema","solución"]);//console.table() se utiliza para mostrar datos en formato de tabla en la consola, lo que facilita la visualización de estructuras de datos complejas como objetos o arrays.
+        
+        console.time("Prueba");//console.time() se utiliza para iniciar un temporizador con una etiqueta específica, lo que permite medir el tiempo que tarda en ejecutarse un bloque de código.
+        console.warn("Esto es una advertencia");
+        console.warn("Esto es una advertencia");
+        console.warn("Esto es una advertencia");
+        console.warn("Esto es una advertencia");
+        console.warn("Esto es una advertencia");
+        console.timeEnd("Prueba");//console.timeEnd() se utiliza para detener el temporizador iniciado con console.time() y mostrar el tiempo transcurrido en la consola, lo que ayuda a evaluar el rendimiento de un bloque de código.
+    </script>
+</body>
+</html>

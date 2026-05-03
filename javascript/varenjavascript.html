@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nombre = "Juan <br/>";/*Variable de tipo string pero puede ser reasignada*/
+        var nombre = "Pedro <br/>";//Reasignación de la variable nombre
+        nombre = "Luis <br/>";//Reasignación de la variable nombre sin usar var
+        var segundo = "Maria <br/>";
+        var nombre2 = "Carlos <br/><br/>";
+        document.write(nombre);
+        document.write(segundo);
+        document.write(nombre2);
+
+        let nombrelet = "Juan <br/>";/*Variable de tipo string pero solo en el bloque donde se declara*/
+        nombrelet = "otro nombre <br/><br/>";/*Reasignación de la variable nombre*/
+        document.write(nombrelet);
+
+        const nombreconst = "Constante <br/>";/*Variable de tipo texto pero no puede ser reasignada*/
+        //const nombreconst = "otro nombre <br/>";//Error: No se puede redeclarar una constante
+        nombreconst2 = "Cambio <br/>";
+        document.write(nombreconst);
+        document.write(nombreconst2);
+    </script>
+</body>
+</html>
