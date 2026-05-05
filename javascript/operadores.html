@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de datos</title>
+</head>
+<body>
+    <script>
+        //Operadores de suma, resta e incremento y decremento
+        var a = 30;
+        var b = 50;
+        var c = a + b; //suma entre variables
+        a++; //incremento de a en 1, a = a + 1
+        b--; //decremento de b en 1, b = b - 1
+        document.write("El resultado de la suma es: " + c + "<br><br>");
+        document.write("El valor de a es: " + a + "<br>");
+        document.write("El valor de b es: " + b);
+
+        //igualdad y desigualdad y operadores de asignacion
+        var d = 30;
+        var e = 50;
+        a **= 2; //a = a ** 2, a = a * a, a = 30 * 30
+        document.write("<br><br>El resultado de a elevado al cuadrado es: " + a);
+        document.write("<br>El resultado de la igualdad es: " + (d === e));//igualdad
+        document.write("<br>El resultado de la desigualdad es: " + (d !== e) + "<br>");//desigualdad
+
+        //operadores de comparacion
+        var f = 30;
+        var g = 50;
+        var h = "40";
+        document.write("<br>El resultado de f < g es: " + (f < g));//menor que
+        document.write("<br>El resultado de f > g es: " + (f > g));//mayor que
+        document.write("<br>El resultado de f <= g es: " + (f <= g));//menor o igual que
+        document.write("<br>El resultado de f >= g es: " + (f >= g));//mayor o igual que
+        document.write("<br>El resultado de f == h es: " + (f == h));//igualdad de valor, no de tipo
+        document.write("<br>El resultado de f === h es: " + (f === h));//igualdad de valor y tipo
+        document.write("<br>El resultado de f != g es: " + (f != g));//desigualdad de valor, no de tipo
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos/Loops</title>
+</head>
+<body>
+    <script>
+        // Ciclo While
+        var i = 1;
+        while (i <= 5) {// Puede ser un condicion mayor o menor, dependiendo de lo que se quiera hacer
+            document.write(i + " ) Hello There" + "<br>");
+            i++;
+        }
+        // Ciclo Do While
+        var j = 1;
+        do {
+            document.write("General Kenobi" + "<br>");
+            j++;
+        } while (j <= 5);
+        // Ciclo For
+        for (var k = 1; k <= 5; k++) {// El primer parametro es la variable de control, el segundo es la condicion y el tercero es el incremento o decremento
+            document.write("Ejemplo de For" + "<br>");
+
+        }
+        // Ciclos anidados
+        for (var m = 3; m <= 100; m = m + 10) {
+            for (var n = m; n < m + 10; n++) {
+                document.write("Ciclo Anidado: " + n + "<br>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<!--<body onkeypress="fun()"><!--Ejemplo de evento onkeypress que se refiere a cuando el usuario presiona una tecla-->
+<body onresize="fun()"><!--Ejemplo de evento onresize que se refiere a cuando el usuario redimensiona la ventana-->
+    <script >
+        //Los eventos son acciones o sucesos que ocurren en el sistema, los cuales pueden ser detectados y manejados por el código JavaScript. Algunos ejemplos de eventos comunes incluyen:
+        //1. Click: Ocurre cuando el usuario hace clic en un elemento.              
+        //2. Mouseover: Ocurre cuando el usuario mueve el cursor sobre un elemento.
+        //3. Keydown: Ocurre cuando el usuario presiona una tecla.
+        //4. Load: Ocurre cuando una página web o un recurso se ha cargado completamente.
+        //Para manejar eventos en JavaScript, se pueden utilizar diferentes métodos, como:
+        //1. addEventListener: Permite agregar un controlador de eventos a un elemento específico
+        //2. onclick: Permite asignar una función a un evento de clic en un elemento.
+        //3. onmouseover: Permite asignar una función a un evento de mouseover en un elemento.
+        //4. onkeydown: Permite asignar una función a un evento de keydown en un elemento.
+         function fun(param){
+            alert("Hello there");
+        } 
+    </script>
+    <button onclick="fun()">Click</button><br><!--Ejemplo de evento click-->
+    <button ondblclick="fun()">Doble Click</button><br><!--Ejemplo de evento doble click-->
+    <!--<button onmouseover="fun()">Mouse Over</button><br>Ejemplo de evento mouseover o poner el cursor sobre un elemento-->
+    <p onmouseenter="fun()">Hola mundo</p><br><br><!--Ejemplo de evento mouseenter que se refiere a cuando el cursor entra en el área de un elemento-->
+    <p>Presiona una tecla</p>
+</body>
+</html>

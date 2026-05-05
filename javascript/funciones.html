@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funciones 
+        function funcion() {
+            document.write("Hello there<br>");
+        }
+        function meta() {
+            document.write("General Kenobi<br>");
+        }
+        meta();
+        funcion();
+        funcion();
+        funcion();
+        funcion();
+        funcion();
+        funcion();
+        funcion();
+
+        //funciones con parametros
+        function nombre(nombre, apellido) {
+            document.write("<br>" + nombre + " " + apellido);
+        }
+        //nombre();// se muestrtan undefined porque no se le asigna ningun valor a los parametros
+        nombre("Luke", "Skywalker");
+
+        //funciones con retorno
+        function mensaje(first = "May the 4th", last = "be with you") {
+            var x = first + " " + last;
+            return x;//return se utiliza para devolver un valor a la parte del programa que hizo la llamada a la función
+        }   
+        var msm = mensaje("Hola", "Mundo");//se asigna el valor que devuelve la función a la variable msm
+        document.write("<br><br>" + msm + "<br>");
+
+        function agregar(jedi, sith, padawan) {
+            var z = jedi + sith + padawan;
+            return z;
+        }
+        function mult(total) {
+            var y = (total/300)*100;
+            document.write(y);
+        }
+        var sum = agregar(90, 80, 80);
+        mult(sum);
+        //document.write("" + sum);
+    </script>
+</body>
+</html>

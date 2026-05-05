@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Boxes</title>
+</head>
+<body>
+    <script>
+        //uso de alert
+        var x = 15;// valor de x 15 y despues 40
+        var y = 25;//valor de y 25 y despues 20
+        if (x > y) {
+            alert("x es mayor que y");
+        } else {
+            alert("x no es mayor que y");
+        }
+    </script>
+
+    <script>
+        //uso de confirmbox
+        var r = confirm("¿Eres humano?");
+        if (r) {
+            alert("¡Bienvenido!");
+        } else {
+            alert("Hasta la vista!!!");
+        }
+    </script>
+
+    <script>
+        //uso de prompt, se pueden usar para pedir datos al usuario, como su nombre, edad, etc.
+        var name = prompt("¿Cuál es tu nombre?", "Escribe tu nombre aquí");
+        document.write("Hola " + name + "! Bienvenido a JavaScript.<br>");
+
+        var val = prompt("Ingresa un valor entre 40 y 100");
+        if (val >= 80 && val <= 100) {
+            document.write("1ro<br><br>");
+        } else if (val >= 60 && val <= 80) {
+            document.write("2do<br><br>");
+        } else if (val >= 50 && val <= 70) {
+            document.write("3ro<br><br>");
+        } else if (val < 50) {
+            document.write("Pasaste<br><br>");
+        } else {
+            document.write("ingresa un valor valido<br><br>");
+        }
+    </script>
+</body>
+</html>
