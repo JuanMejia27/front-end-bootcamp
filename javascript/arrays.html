@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrays son arreglos o listas de elementos, pueden contener cualquier tipo de dato, como numeros, cadenas de texto, objetos, etc. Se definen utilizando corchetes [] y los elementos se separan por comas.
+        var array = [10, 20, 30, 40, 50, 60, 70];//Es un array de 7 elementos, con indices del 0 al 6
+        document.write(array);//se imprime el array completo, pero se puede acceder a cada elemento por su indice, por ejemplo: document.write(array[5]); //imprime el elemento en el indice 5, que es 60
+        document.write("<br>");
+        document.write(array[5]+"<br><br>");
+        document.write("<ul>");//se abre una lista desordenada para imprimir cada elemento del array en una nueva linea
+        for(var i = 0; i < array.length; i++){//se recorre el array desde el indice 0 hasta el indice 6, utilizando la propiedad length para determinar el numero de elementos del array
+            document.write("<li>" + array[i] + "</li>");//imprime cada elemento del array en una nueva linea, utilizando la etiqueta <li> para crear un elemento de lista
+        }
+        document.write("</ul>");
+
+        //modificar o eliminar elementos de un array
+        var a = ["Joel", 70, "Dev"];
+        document.write(a + "<br>");
+        a[0] = "Carlos";
+        document.write(a + "<br>");
+        delete a[1];
+        document.write(a + "<br>");
+        document.write(a[1] + "<br>");
+
+        //Sirt y el reverse
+        document.write("<br>");
+        var b = ["Joel", "Carlos", "Ana", "Maria", "Pedro", "Ale"];
+        document.write(b + "<br>");
+        b.sort();//ordena los elementos del array en orden alfabetico
+        document.write(b + "<br>");
+        b.reverse();//invierte el orden de los elementos del array
+        document.write(b + "<br><br>");
+
+        //Los metodos pop y push se utilizan para agregar o eliminar elementos al final de un array
+        var c = ["Anakin", "Luke", "Obi-Wan", "Leia"];
+        document.write(c + "<br>");
+        c.pop();//elimina el ultimo elemento del array, que es "Leia"
+        document.write(c + "<br>");
+        c.push("Han Solo");//agrega un nuevo elemento al final del array, que es "Han Solo"
+        document.write(c + "<br><br>");
+
+        //El metodo shift y unshift se utilizan para agregar o eliminar elementos al inicio de un array
+        var d = [1, 2, 3, 4, 5];
+        document.write(d + "<br>");
+        d.shift();//elimina el primer elemento del array, que es 1
+        document.write(d + "<br>");
+        d.unshift(0);//agrega un nuevo elemento al inicio del array, que es 0
+        document.write(d + "<br><br>");
+
+        //El metodo concatenate se utiliza para unir dos o mas arrays en uno solo
+        var e = ["Anakin", "Obi-Wan"];
+        var f = [40, 60];
+        var g = e.concat(f);//une los elementos de los arrays e y f en un nuevo array g, que contiene todos los elementos de ambos arrays
+        document.write(g + "<br>"); 
+        var h = g.join(" *");//une los elementos del array g en una cadena de texto, utilizando un espacio como separador entre los elementos
+        document.write(h + "<br><br>");
+
+        //El metodo slice y splice se utilizan para extraer o modificar elementos de un array
+        var i = ["Joel", "Carlos", "Ana", "Maria", "Pedro"];
+        document.write(i + "<br>");
+        var j = i.slice(2);//extrae los elementos del array i desde el indice por ejemplo 0 hasta el indice 3, y los devuelve en un nuevo array j
+        document.write(j + "<br>");
+        i.splice(2, 0, "Ale", "Sofia");//modifica el array i eliminando el elemento en el indice 2, que es "Ana", y agregando un nuevo elemento "Ale" en su lugar
+        document.write(i + "<br><br>");
+
+        //El metodo isArray se utiliza para verificar si una variable es un array o no
+        var k = ["Joel", "Carlos", "Ana"];
+        document.write(Array.isArray(k) + "<br>");//imprime true si k es un array, false en caso contrario  
+        var l = "Hola Mundo";
+        var m = Array.isArray(l);
+        document.write(m + "<br>");
+        if(Array.isArray(l)){
+            document.write("l es un array");
+        }else{
+            document.write("l no es un array");
+        }
+
+        //EL metodo indexOf se utiliza para buscar un elemento en un array y devuelve su indice, o -1 si no se encuentra
+        var n = ["Joel", "Carlos", "Ana", "Maria", "Pedro"];
+        </script>
+    </body>
+</html>
