@@ -82,6 +82,62 @@
 
         //EL metodo indexOf se utiliza para buscar un elemento en un array y devuelve su indice, o -1 si no se encuentra
         var n = ["Joel", "Carlos", "Ana", "Maria", "Pedro"];
+        document.write("<br><br>" + n + "<br>");
+        var m = n.indexOf("Maria", 4);//busca el elemento "Maria" en el array n y devuelve su indice, que es 3 si se encuentra, o -1 si no se encuentra. El segundo parametro 4 indica que la busqueda comenzara desde el indice 4, es decir, se buscara "Maria" a partir del indice 4 en adelante
+        document.write(m + "<br><br>");
+
+        //El metodo forEach se utiliza para recorrer los elementos de un array y ejecutar una funcion para cada elemento
+        var nombres = ["Joel", "Carlos", "Ana", "Maria", "Pedro"];
+        nombres.forEach(loop); //recorre el array nombres y ejecuta la funcion loop para cada elemento del array, pasando el valor del elemento y su indice como parametros a la funcion loop
+            function loop(valor, indice){//la funcion loop recibe dos parametros, valor e indice, que representan el valor del elemento actual y su indice en el array, respectivamente
+            document.write(indice + "   " + valor + "<br>");//
+        }
+
+        //Metodos ToString, valueOf y fill
+        var o = [70, 30, 50];
+        document.write("<br><br>" + o + "<br>");
+        /*o.toString();//convierte el array o en una cadena de texto, separando los elementos por comas
+        document.write(o + "<br>");        
+        o.valueOf();//devuelve el valor primitivo del array o, que es el propio array
+        document.write(o + "<br>");*/
+        o.fill("hola");//rellena todos los elementos del array o con el valor "hola"
+
+        //El metodo Include se utiliza para verificar si un elemento existe en un array y devuelve true o false
+        var p = [10, 50, 70, 90, 20];
+        document.write("<br><br>" + p + "<br>");
+        var q = p.includes("50");//verifica si el elemento 50 existe en el array p y devuelve true si se encuentra, o false si no se encuentra
+        document.write(q + "<br>");
+
+        //El metodo some y every se utilizan para verificar si al menos un elemento o todos los elementos de un array cumplen una condicion, respectivamente
+        var r = [10, 2, 3, 4, 20];
+        document.write("<br><br>" + r + "<br>");
+        //var s = r.some(checkvalue);//verifica si al menos un elemento del array r es mayor que el valor ingresado, utilizando la funcion some, que devuelve true si se encuentra al menos un elemento que cumple la condicion, o false si no se encuentra ningun elemento que cumpla la condicion
+        var s = r.every(checkvalue);//verifica si todos los elementos del array r son mayores que el valor ingresado, utilizando la funcion every, que devuelve true si todos los elementos cumplen la condicion, o false si al menos un elemento no cumple la condicion
+        document.write(s + "<br>");
+
+        function checkvalue(edad){
+            return edad >= 30;
+        }
+
+        //El metodo Find y findIndex se utilizan para buscar un elemento en un array que cumpla una condicion y devuelve el elemento encontrado o su indice, respectivamente
+        var t = [20, 22, 30, 18, 20];
+        document.write("<br><br>" + t + "<br>");
+        //var u = t.find(checkvalue);//busca el primer elemento del array t que es mayor o igual al valor ingresado, utilizando la funcion find, que devuelve el elemento encontrado si se encuentra, o undefined si no se encuentra ningun elemento que cumpla la condicion
+        var u = t.findIndex(checkvalue);//busca el indice del primer elemento del array t que es mayor o igual al valor ingresado, utilizando la funcion findIndex, que devuelve el indice del elemento encontrado si se encuentra, o -1 si no se encuentra ningun elemento que cumpla la condicion
+        document.write(u + "<br>");
+
+        function checkvalue(edades){
+            return edades >= 28;
+        }
+
+        //El metodo filter se utiliza para crear un nuevo array con los elementos de un array que cumplen una condicion
+        var v = [50, 25, 30, 15, 20];
+        document.write("<br><br>" + v + "<br>");
+        var w = v.filter(checkvalue);
+        document.write(w + "<br>");
+        function checkvalue(num){
+            return num <= 25;
+        }
         </script>
     </body>
 </html>
