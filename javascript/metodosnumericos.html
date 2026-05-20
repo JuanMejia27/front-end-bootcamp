@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //metodos numericos
+        var a = 20.215645616456;//10.20 years
+        var b = a.toPrecision(2); //redondea el numero a 2 cifras significativas, devuelve un string
+        //var b = a.toFixed(5); //redondea el numero a 5 decimales, devuelve un string
+        //var b = isFinite(a);// devuelve true si el numero es finito, false si es infinito o no es un numero
+        //var b = parseFloat(a);// Number(a); convierte el string a un numero
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        document.write(typeof a + "<br><br>"); // string
+
+        //metodos matematicos
+        var c = Math.PI; //3.141592653589793
+        var e = Math.ceil(317.7756521); //redondea al numero entero mayor, devuelve un numero
+        var f = Math.floor(e); //redondea al numero entero menor, devuelve un numero        
+        var d = Math.round(c); //redondea al numero entero mas cercano, devuelve un numero   
+        var h = Math.trunc(e); //elimina los decimales, devuelve un numero    
+        var g = Math.random(); //devuelve un numero aleatorio entre 0 y 1
+        var i = Math.max(16, 23, 255, 8000, 70); //devuelve el numero mayor
+        var j = Math.min(16, 23, 255, 8000, 70); //devuelve el numero menor
+        document.write(e + "<br>");
+        document.write(f + "<br>");
+        document.write(d + "<br>");
+        document.write(h + "<br>");
+        document.write(g + "<br>");
+        document.write(i + "<br>");
+        document.write(j + "<br><br>");
+
+        var k = Math.sqrt(255); //raiz cuadrada de 255, devuelve un numero
+        var l = Math.pow(7, 3); //7 elevado a la 3, devuelve un numero
+        var m = Math.cbrt(10); //raiz cubica de 10, devuelve un numero
+        var n = (Math.floor(Math.random() * 10) + 1); //devuelve un numero aleatorio entre 1 y 10
+        var o = Math.abs(7.368); //valor absoluto de 7.368, devuelve un numero
+        document.write(k + "<br>");
+        document.write(l + "<br>");
+        document.write(m + "<br>");
+        document.write(n + "<br>");
+        document.write(o + "<br><br>");
+
+        //metodos de fecha
+        var fecha = new Date(); //fecha actual
+        fecha.setDate(15); //cambia el dia del mes a 15
+        fecha.setFullYear(2025); //cambia el año a 2025
+        fecha.setSeconds(45); //cambia los segundos a 45
+        fecha.setMinutes(30); //cambia los minutos a 30
+        fecha.setHours(10); //cambia la hora a 10
+        document.write(fecha + "<br>"); //trae la fecha actual
+        document.write(fecha.getDate() + " dia del mes<br>"); //dia del mes
+        document.write(fecha.getDay() + " dia de la semana (0-6)<br>"); //dia de la semana (0-6)
+        document.write(fecha.getFullYear() + " año<br>"); //año
+        document.write(fecha.getMonth() + " mes (0-11)<br>"); //mes (0-11)
+        document.write(fecha.getUTCHours() + " hora UTC<br>"); //hora UTC
+        document.write(fecha.getHours() + " hora<br>"); //hora
+        document.write(fecha.getMinutes() + " minutos<br>"); //minutos
+        document.write(fecha.getSeconds() + " segundos<br>"); //segundos
+        document.write(fecha.toDateString() + " fecha en formato de texto<br>"); //fecha en formato de texto
+
+    </script>
+</body>
+</html>

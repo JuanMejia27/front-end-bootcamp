@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Objetos son estructuras de datos que permiten almacenar información en forma de pares clave-valor. Se definen utilizando llaves {} y cada par clave-valor se separa por comas. Las claves son cadenas de texto que identifican cada valor, y los valores pueden ser de cualquier tipo de dato, como números, cadenas de texto, arrays, otros objetos, etc.
+        var a = {
+            nombre: "Joel",
+            apellido: "Gonzalez",
+            edad: 25,
+            email: "joel.gonzalez@example.com",
+            peliculas: ["Inception", "The Matrix", "Interstellar"],
+            ingresos: function() {
+                return 25000;
+            },
+            fun:function() {
+                return this.nombre + " " + this.apellido;// this.apellido this se refiere al objeto actual, en este caso el objeto a, y accede a las claves "nombre" y "apellido" para concatenar sus valores y devolver el nombre completo del objeto.
+            },
+        };
+        document.write(a + "<br>"); //se imprime el objeto completo, pero se puede acceder a cada valor por su clave, por ejemplo: document.write(a.nombre); //imprime el valor de la clave "nombre", que es "Joel"
+        //console.log(a); //se imprime el objeto completo en la consola del navegador, lo que permite ver su estructura y sus valores de manera más clara
+        document.write(a.nombre + " " + a.apellido + "<br>"); //imprime el valor de la clave "nombre", que es "Joel"
+        document.write(a.peliculas + "<br>"); //imprime el valor del segundo elemento del array "peliculas", que es "The Matrix"
+        document.write(a.fun() + "<br>");
+        console.log(a.peliculas);
+
+        var primero = new Object();//se crea un nuevo objeto utilizando la función constructora Object()
+        primero.nombre = "Carlos";//se asigna un valor a la clave "nombre" del objeto primero
+        primero.apellido = "Perez";
+        primero.edad = 30;
+        document.write(primero.edad + "<br><br><br>"); //imprime el valor de la clave "edad", que es 30
+
+
+        //Areglos de objetos
+        var personas = [
+            {
+                nombre: "Ana",
+                edad: 28
+            },
+            {
+                nombre: "Maria",
+                edad: 32
+            },
+            {
+                nombre: "Pedro",
+                edad: 24
+            }
+            
+        ];
+        console.log(personas);
+
+        for(var i = 0; i < personas.length; i++){
+            document.write(personas[i].nombre + " tiene " + personas[i].edad + " años.<br><br><br>");//se accede a cada objeto del array personas utilizando su indice, y luego se accede a las claves "nombre" y "edad" para imprimir la información de cada persona
+        }
+
+
+        //Ciclo for en un loop
+        var b = {
+            nombre: "Joel",
+            apellido: "Gonzalez",
+            edad: 25,
+            email: "joel.gonzalez@example.com"
+        };
+        for(var clave in b){//se utiliza un ciclo for...in para recorrer las claves del objeto b, y se asigna cada clave a la variable clave en cada iteración del ciclo
+            document.write(clave + ": " + b[clave] + "<br>");//se accede al valor de cada clave utilizando la sintaxis b[clave], lo que permite imprimir tanto la clave como su valor en cada iteración del ciclo
+        }
+    </script>
+</body>
+</html>

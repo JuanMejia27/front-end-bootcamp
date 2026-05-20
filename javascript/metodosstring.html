@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Metodos de String
+        var texto = "Hola Mundo";
+        //var b = texto.length;//length devuelve el numero de caracteres que tiene la cadena
+        //var b = texto.toLowerCase();//toLowerCase convierte la cadena a minusculas
+        //var b = texto.toUpperCase();//toUpperCase convierte la cadena a mayusculas
+        //var b = texto.includes("Mundo");//includes devuelve true si la cadena contiene el texto especificado, de lo contrario devuelve false
+        //var b = texto.startsWith("Hola");//startsWith devuelve true si la cadena comienza con el texto especificado, de lo contrario devuelve false
+        //var b = texto.endsWith("Hola");//endsWith devuelve true si la cadena termina con el texto especificado, de lo contrario devuelve false
+        var b = texto.search("d");//search devuelve la posicion de la primera ocurrencia del texto especificado, de lo contrario devuelve -1
+        document.write(b + "<br><br>");
+
+
+        var a = "JavaScript es un buen lenguaje de programación es" + "<br><br>";
+        //var c = a.match(/a/g);//match devuelve un array con todas las coincidencias del texto especificado, de lo contrario devuelve null
+        //var c = a.indexOf("es");//indexOf devuelve la posicion de la primera ocurrencia del texto especificado, de lo contrario devuelve -1
+        //var c = a.lastIndexOf("es");//lastIndexOf devuelve la posicion de la ultima ocurrencia del texto especificado, de lo contrario devuelve -1
+        var c = a.replace("JavaScript", "JS");// replace devuelve una nueva cadena con las coincidencias del texto especificado reemplazadas por el nuevo texto especificado
+        document.write(c);
+
+
+        var variable = "JavaScript es un lenguaje de programación <br>";
+        //var d = variable.trim();//trim elimina los espacios en blanco al inicio y al final de la cadena
+        //var d = variable.charAt("4");//charAt devuelve el caracter en la posicion especificada
+        //var d = variable.charCodeAt("4");//charCodeAt devuelve el codigo ASCII del caracter en la posicion especificada
+        var e = String.fromCharCode("99");//fromCharCode devuelve el caracter correspondiente al codigo ASCII especificado
+        document.write(e + "<br><br>");
+        //var d = variable.split("a");//split divide la cadena en un array de subcadenas utilizando el texto especificado como separador
+        //var d = variable.repeat(7);//repeat devuelve una nueva cadena con el texto repetido el numero de veces especificado
+        //var d = variable.slice(3, 13);//slice devuelve una parte de la cadena entre las posiciones especificadas
+        //var d = variable.substring(4, 13);//substring devuelve una parte de la cadena entre las posiciones especificadas, pero no acepta posiciones negativas
+        var d = variable.toString();//toString devuelve la cadena como un objeto String asi sea un numero o un booleano, de lo contrario devuelve la cadena original
+        document.write(d);
+        
+        //alert(variable);//alert muestra un mensaje en una ventana emergente
+    </script>
+</body>
+</html>
