@@ -1,8 +1,51 @@
-import React, {useEffect, useState} from "react";
-import User from "./User";
-import Test from "./Test";
+import React from "react";
+import "./App.css";
+import Counter from "./Components/Counter";
+import Header from "./Components/Header";
+import './Counter.css';
 
 function App() {
+    return (
+        <>
+            <div className="main">
+                <Header />
+                <Counter />
+            </div>      
+        </>  
+    );
+}
+
+export default App;
+
+
+
+
+/*import Home from "./Components/Home";
+import About from "./Components/About";
+import Header from "./Components/Header";
+import { Routes, Route } from "react-router-dom";
+import Error from "./Errorpage";*/
+
+/*function App() {
+    return (
+      <>
+        <Header />
+
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path='*' element={<Error />} />
+          </Routes>
+        </main>
+
+        </>
+    );
+}
+
+export default App;*/
+
+/*function App() {
     const [estado, updateestado] = React.useState(false);
     return (
         <div>
@@ -14,7 +57,7 @@ function App() {
     );
 }
 
-export default App;
+export default App;/*
 
 /*function App() {
         

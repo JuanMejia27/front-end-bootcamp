@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function User() {
     return (
@@ -9,7 +9,7 @@ function User() {
     );
 }
 
-export default User;
+export default User;*/
 
 /*function User(props) {
     return (

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+/*import React, {useEffect} from "react";
 import { useState } from "react";
 import './Counter.css';
 
@@ -22,4 +22,4 @@ function Counter() {
         </div>
     );
 }
-export default Counter;
+export default Counter;*/
